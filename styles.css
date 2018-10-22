@@ -1,0 +1,19 @@
+header {
+    font-style: italic;
+    font-size: 20pt;
+    text-emphasis: bold;
+}
+
+h1 {
+    font-style: italic;
+    font-size: 12pt;
+}
+
+h2 {
+    font-style: oblique;
+    font-size: 12pt;
+}
+
+img {
+    width: 100%;
+}
