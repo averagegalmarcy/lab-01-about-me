@@ -9,7 +9,7 @@ body {
 }
 
 header {
-    font-style: italic;
+    font-family: 'Playfair Display', serif;
     font-size: 20pt;
     text-emphasis: bold;
     text-align: center;
@@ -17,23 +17,27 @@ header {
 }
 
 article {
-    font-style:initial;
+    font-family: 'Nunito Sans', sans-serif;
     font-size: 12pt;
     text-align: center;
     margin-top: 25px;
 }
 h1, h2, h3{
-    font-style:oblique;
+    font-family: 'Hind Siliguri', sans-serif;
     font-size: 12pt;
     text-align: center;
 }
 
+p {
+    font-family: 'Nunito Sans', sans-serif;
+}
 
 ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
     text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 img {
