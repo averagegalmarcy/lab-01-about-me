@@ -53,6 +53,11 @@ img {
     border-color:lightblue;
 }
 
+img:hover {
+    width: 70%; 
+    border-radius: 15%; 
+}
+
 .clearfix:after { 
     content: "."; 
     visibility: hidden; 

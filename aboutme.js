@@ -9,7 +9,6 @@ function checkAboutMe() {
     var dogInput = elements.dogs;
     var likeDogs = dogInput.value.toLowerCase();
 
-
     var colorInput = elements.color;
     var purpleColor = colorInput.value.toLowerCase();
 
@@ -18,6 +17,9 @@ function checkAboutMe() {
     
     var dogName = elements.name;
     var nameInput = dogName.value.toLowerCase();
+
+    var ageInput = elements.name;
+    var ageAnswer = ageInput.value;
 
     var correct = 0;
 
@@ -63,13 +65,26 @@ function checkAboutMe() {
         dogName.classList.remove('correct');
         dogName.classList.add('incorrect');
     }
+
+    if (ageAnswer === 22) {
+        ageInput.classList.add('correct');
+        ageInput.classList.remove('incorrect');
+    }
+
+    else {
+        ageInput.classList.add('incorrect');
+        ageInput.classList.remove('correct');
+    }
     correctResponse.textContent = 'You got ' + correct + ' out of 5'; 
 }
 
 function resetAboutMe() {
     var elements = aboutMeForm.elements;
     var colorInput = elements.color;
-    var dogInput = elements.dog;
+    var countryAnswer = elements.country;
+    var dogName = elements.name;
+    var ageInput = elements.name;
+    var dogInput = elements.dogs;
 
     dogInput.classList.remove('correct');
     dogInput.classList.remove('incorrect');
@@ -77,7 +92,11 @@ function resetAboutMe() {
     colorInput.classList.remove('incorrect');
     countryAnswer.classList.remove('correct');
     countryAnswer.classList.remove('incorrect');
-
+    dogName.classList.remove('correct');
+    dogName.classList.remove('incorrect')
+    ageInput.classList.remove('correct');
+    ageInput.classList.remove('incorrect');
+    
 
     correctResponse.textContent = '';
 
