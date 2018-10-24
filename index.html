@@ -109,6 +109,34 @@
     
       <script src="./aboutme.js"></script>
       <script src="./guess.js"></script>
+      <script src="./element-count.js"></script>
+
+      <p class="content">Just a paragraph</p>
+
+      <form id="label">
+          <p>
+              <label for="name">Name:</label>
+              <input type="text" name="name" id="name">
+          </p>
+         
+          <fieldset>
+              <input name="section" type="checkbox" id="div" value="div">
+              <label for="div">div</label>
+  
+              <input name="section" type="checkbox" id="p" value="p">
+              <label for="p">p</label>
+              
+              <input name="section" type="checkbox" id="form" value="form">
+              <label for="form">form</label>
+
+              <input name="section" type="checkbox" id="h" value="h">
+              <label for="h">h</label>
+         </fieldset>
+      </form>
+  
+      <div>
+        <button onclick="tryQuerySelector()">try query selector</button>
+    </div>
     </main>
 </body>
 </html>
