@@ -36,14 +36,14 @@ function checkAboutMe() {
         colorInput.classList.add('incorrect');
     }
 
-    if (countryInput.value === "japan") {
-        countryInput.classList.add('correct');
-        countryInput.classList.remove('incorrect');
-    }
+    // if (countryInput.value === "japan") {
+    //     countryInput.classList.add('correct');
+    //     countryInput.classList.remove('incorrect');
+    // }
 
-    else {
-        countryInput.classList.add('incorrect'); 
-        countryInput.classList.remove('correct');
-    }
+    // else {
+    //     countryInput.classList.add('incorrect'); 
+    //     countryInput.classList.remove('correct');
+    // }
 
 }
