@@ -1,16 +1,16 @@
 var aboutMeForm = document.getElementById('about-me')
-var correctReponse = document.getElementById('correct-response')
+var correctResponse = document.getElementById('correct-response')
 
 function checkAboutMe() {
     var elements = aboutMeForm.elements;
 
     var dogInput = elements.dogs;
     var likeDogs = dogInput.value;
-    console.log(dogInput); 
+
 
     var colorInput = elements.color;
     var purpleColor = colorInput.value;
-    console.log(colorInput); 
+
     var countryInput = elements.country;
     var correct = 0;
 
@@ -35,7 +35,9 @@ function checkAboutMe() {
         colorInput.classList.remove('correct');
         colorInput.classList.add('incorrect');
     }
-
+    
+    correctResponse.textContent = 'You got ' + correct + ' out of 2';
+    
     // if (countryInput.value === "japan") {
     //     countryInput.classList.add('correct');
     //     countryInput.classList.remove('incorrect');
@@ -45,5 +47,18 @@ function checkAboutMe() {
     //     countryInput.classList.add('incorrect'); 
     //     countryInput.classList.remove('correct');
     // }
-
+    
+    function resetAboutMe() {
+        var elements = aboutMeForm.elements;
+        var catsInput = elements.cats;
+        var foodInput = elements.food;
+    
+        dogInput.classList.remove('correct');
+        dogInput.classList.remove('incorrect');
+        colorInput.classList.remove('correct');
+        colorInput.classList.remove('incorrect');
+    
+        aboutMeResponse.textContent = '';
+    
+    }   
 }

@@ -56,41 +56,46 @@
         <div>
             <label for="dogs"> Do I like dogs? </label>
             <input type="text" id="dogs" name="dogs" placeholder="yes/absolutely"> 
-            <button type="submit"> Enter </button>
         </div>
 
         <div>
             <label for="color"> What is my favorite color?</label>
             <input type="text" id="color" name="color" placeholder="hint: it's not yellow">
-            <button type="submit"> Guess </button>
         </div>
-        
-        <!-- <div>
-            <label for="country"> What is my favorite country I have visited?</label> <br>
-            <input type="radio" id="country" name="country" value="japan"> Japan
-            <input type="radio" id="country" name="country" value="Argentina"> Argentina
-            <input type="radio" id="country" name="country" value="Peru"> Peru
-        </div>
-        <div>
-            <label for="dog-name"> What name would I give my dog if I had one?</label> <br>
-                <select name="dog-name">
-                    <option value="disabled">Please Pick One</option>
-                    <option value="pickles"> Pickles</option>
-                    <option value="cheddar"> Cheddar</option>
-                    <option value="toby">Toby</option>
-                </select> -->
-            <p id="right-a"></p>
                 
-        </div> 
-        <button type="submit"> Submit </button>           
+        <div id="buttons"> 
+                <button type="submit"> Submit </button> 
+                <button type="submit">Guess</button>
+                <button type="reset">Play Again</button>
+        </div>          
      </form>
     </div> 
-    <p id = "correct-response"></p>
+    <p id="correct-response"></p>
 </section>
+    <section>
+        <h5>Guess My Favorite Number</h2>
+        <form id="guess-form"
+          onsubmit="event.preventDefault(); checkGuessNumber();"
+          onreset="resetGuessNumber()"
+>
+          <div>
+            <label for="number">What is my favorite number?</label>
+            <input type="text" id="number" name="number" placeholder="1 - 10" />
+          </div>
+    
+          <div>
+            <button type="submit" name="guess">Guess</button>
+            <button type="reset" name="play-again">Play Again</button>
+          </div>
+    
+        </form>
+    
+          <p id="guess-number-response"></p>
+      </section>
+    
+      <script src="aboutme.js"></script>
+      <script src="guess.js"></script>
 </main>
-
-<script src="aboutme.js"></script>
-
 
 </body>
 </html>

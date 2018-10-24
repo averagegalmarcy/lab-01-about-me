@@ -22,7 +22,7 @@ article {
     text-align: center;
     margin-top: 25px;
 }
-h1, h2, h3, h4 {
+h1, h2, h3, h4,h5 {
     font-family: 'Hind Siliguri', sans-serif;
     font-size: 12pt;
     text-align: center;
@@ -76,11 +76,15 @@ form div {
     font-family: 'Hind Siliguri', sans-serif;
 }
 
-#aboutMeGame {
+#about-me {
     width: fit-content; 
     border: 5px dashed rosybrown; 
     margin: 0 auto; 
     margin-top: 20px;
+}
+
+#buttons {
+    text-align: center;
 }
 
 .correct {
@@ -90,3 +94,6 @@ form div {
 .incorrect {
     background-color: red;
   }
+.correct-response  {
+    text-align: center;
+}
