@@ -1,5 +1,5 @@
 body {
-    background-image:url(https://i.pinimg.com/236x/06/42/e3/0642e33d89ec9e7cb2cf6754c36dda54--watercolor-iphone-wallpaper-marble-wallpaper-phone.jpg);
+    background-image:url(https://i.pinimg.com/236x/9f/86/a4/9f86a408e78a715bd6b9ede39e29efbd.jpg);
     background-position: center;  
     height: 100%;
     background-size: cover;
@@ -22,10 +22,11 @@ article {
     text-align: center;
     margin-top: 25px;
 }
-h1, h2, h3{
+h1, h2, h3, h4 {
     font-family: 'Hind Siliguri', sans-serif;
     font-size: 12pt;
     text-align: center;
+    text-emphasis: bold;
 }
 
 p {
@@ -49,9 +50,8 @@ img {
     margin-right: auto;
     margin-top: 25px;
     border-style: ridge;
-    border-color: black;
+    border-color:lightblue;
 }
-
 
 .clearfix:after { 
     content: "."; 
@@ -63,11 +63,30 @@ img {
 
  @media only screen and (min-width: 400px) {
     body {
-        background-image:url(https://image.freepik.com/free-vector/geometric-abstract-chaotic-triangle-background-mosaic-vector-graphic-design-from-colored-triangles_1164-1478.jpg);
+        background-image:url(https://static.vecteezy.com/system/resources/previews/000/236/205/large_2x/abstract-colorful-hand-draw-watercolor-background-vector.jpg);
+        background-repeat: no-repeat;
     }
     #food {
         float: right;
         margin-right: 30%;
     }
 }
+form div {
+    text-align: center;
+    font-family: 'Hind Siliguri', sans-serif;
+}
 
+#aboutMeGame {
+    width: fit-content; 
+    border: 5px dashed rosybrown; 
+    margin: 0 auto; 
+    margin-top: 20px;
+}
+
+.correct {
+    background-color: green;
+  }
+
+.incorrect {
+    background-color: red;
+  }
