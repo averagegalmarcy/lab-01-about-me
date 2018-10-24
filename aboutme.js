@@ -1,5 +1,5 @@
 /* exported checkAboutMe, resetAboutMe */
-
+'use strict';
 var aboutMeForm = document.getElementById('about-me')
 var correctResponse = document.getElementById('correct-response')
 
@@ -15,6 +15,9 @@ function checkAboutMe() {
 
     var countryInput = elements.country;
     var countryAnswer = countryInput.value.toLowerCase();
+    
+    var dogName = elements.name;
+    var nameInput = dogName.value.toLowerCase();
 
     var correct = 0;
 
@@ -40,32 +43,42 @@ function checkAboutMe() {
         colorInput.classList.add('incorrect');
     }
 
-    if (countryAnswer === "Japan") {
+    if (countryAnswer === 'Japan') {
         correct = correct + 1;
-        countryAnswer.classList.add('correct');
-        countryAnswer.classList.remove('incorrect');
+        countryInput.classList.add('correct');
+        countryInput.classList.remove('incorrect');
     }
-    else {
-        countryAnswer.classList.remove('correct');
-        countryAnswer.classList.add('incorrect');
+    else if (countryAnswer !=='') {
+        countryInput.classList.add('incorrect');
+        countryInput.classList.remove('correct')
     }
-    correctResponse.textContent = 'You got ' + correct + ' out of 3';
 
+    if (nameInput === 'Cheddar' || nameInput === 'Pickles') {
+        correct = correct + 1;
+        dogName.classList.add('correct');
+        dogName.classList.remove('incorrect');
+    }
     
-    function resetAboutMe() {
-        var elements = aboutMeForm.elements;
-        var colorInput = elements.color;
-        var dogInput = elements.dog;
-    
-        dogInput.classList.remove('correct');
-        dogInput.classList.remove('incorrect');
-        colorInput.classList.remove('correct');
-        colorInput.classList.remove('incorrect');
-        countryAnswer.classList.remove('correct');
-        countryAnswer.classList.remove('incorrect');
-
-    
-        correctResponse.textContent = '';
-    
-    }   
+    else if (nameInput !== '') {
+        dogName.classList.remove('correct');
+        dogName.classList.add('incorrect');
+    }
+    correctResponse.textContent = 'You got ' + correct + ' out of 5'; 
 }
+
+function resetAboutMe() {
+    var elements = aboutMeForm.elements;
+    var colorInput = elements.color;
+    var dogInput = elements.dog;
+
+    dogInput.classList.remove('correct');
+    dogInput.classList.remove('incorrect');
+    colorInput.classList.remove('correct');
+    colorInput.classList.remove('incorrect');
+    countryAnswer.classList.remove('correct');
+    countryAnswer.classList.remove('incorrect');
+
+
+    correctResponse.textContent = '';
+
+}  

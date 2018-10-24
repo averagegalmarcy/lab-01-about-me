@@ -66,10 +66,15 @@
         <div>
             <label for="country"> What is my favorite country that I have ever been to?</label>
             <input type="text" id="country" name="country" placeholder="It's a country in Asia"> 
-        </div> 
+        </div>  
+
+        <div>
+            <label for="name"> What would be the perfect dog name?</label>
+            <input type="text" id="name" name="name" placeholder="Think of food items">
+        </div>
                 
         <div id="buttons"> 
-                <button type="submit"> Submit </button> 
+                <button id="submit" type="submit"> Submit </button> 
                 <button type="reset">Play Again</button>
         </div>          
      </form>
@@ -81,7 +86,7 @@
         <form id="guess-form"
           onsubmit="event.preventDefault(); checkGuessNumber();"
           onreset="resetGuessNumber()"
->
+        >
           <div>
             <label for="number">What is my favorite number?</label>
             <input type="text" id="number" name="number" placeholder="1 - 10" />
@@ -99,7 +104,6 @@
     
       <script src="./aboutme.js"></script>
       <script src="./guess.js"></script>
-</main>
-
+    </main>
 </body>
 </html>
