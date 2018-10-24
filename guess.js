@@ -1,3 +1,5 @@
+
+
 var guessForm= document.getElementById('guess-form'); 
 var guessResults= document.getElementById('guess-number-response'); 
 
@@ -11,7 +13,7 @@ function checkGuessNumber() {
     }
 
     else {
-        alert("Sorry, you guessed wrong?")
+        alert("Sorry, you guessed wrong!")
         totalGuesses = totalGuesses +1; 
         console.log(totalGuesses); 
     }

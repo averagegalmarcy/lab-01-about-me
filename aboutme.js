@@ -1,3 +1,5 @@
+/* exported checkAboutMe, resetAboutMe */
+
 var aboutMeForm = document.getElementById('about-me')
 var correctResponse = document.getElementById('correct-response')
 
@@ -5,13 +7,15 @@ function checkAboutMe() {
     var elements = aboutMeForm.elements;
 
     var dogInput = elements.dogs;
-    var likeDogs = dogInput.value;
+    var likeDogs = dogInput.value.toLowerCase();
 
 
     var colorInput = elements.color;
-    var purpleColor = colorInput.value;
+    var purpleColor = colorInput.value.toLowerCase();
 
     var countryInput = elements.country;
+    var countryAnswer = countryInput.value.toLowerCase();
+
     var correct = 0;
 
     if(likeDogs === 'yes' ||  likeDogs === 'absolutely') {
@@ -35,30 +39,33 @@ function checkAboutMe() {
         colorInput.classList.remove('correct');
         colorInput.classList.add('incorrect');
     }
-    
-    correctResponse.textContent = 'You got ' + correct + ' out of 2';
-    
-    // if (countryInput.value === "japan") {
-    //     countryInput.classList.add('correct');
-    //     countryInput.classList.remove('incorrect');
-    // }
 
-    // else {
-    //     countryInput.classList.add('incorrect'); 
-    //     countryInput.classList.remove('correct');
-    // }
+    if (countryAnswer === "Japan") {
+        correct = correct + 1;
+        countryAnswer.classList.add('correct');
+        countryAnswer.classList.remove('incorrect');
+    }
+    else {
+        countryAnswer.classList.remove('correct');
+        countryAnswer.classList.add('incorrect');
+    }
+    correctResponse.textContent = 'You got ' + correct + ' out of 3';
+
     
     function resetAboutMe() {
         var elements = aboutMeForm.elements;
-        var catsInput = elements.cats;
-        var foodInput = elements.food;
+        var colorInput = elements.color;
+        var dogInput = elements.dog;
     
         dogInput.classList.remove('correct');
         dogInput.classList.remove('incorrect');
         colorInput.classList.remove('correct');
         colorInput.classList.remove('incorrect');
+        countryAnswer.classList.remove('correct');
+        countryAnswer.classList.remove('incorrect');
+
     
-        aboutMeResponse.textContent = '';
+        correctResponse.textContent = '';
     
     }   
 }

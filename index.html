@@ -50,9 +50,9 @@
         <div id="about-me-game">
         <h4> Let's Play a Game!</h4>
         <form id="about-me" name="about-me"
-        onsubmit="event.preventDefault(); checkAboutMe();"
-        onreset="resetAboutMe()"
-    >
+            onsubmit="event.preventDefault(); checkAboutMe();"
+            onreset="resetAboutMe()">
+        
         <div>
             <label for="dogs"> Do I like dogs? </label>
             <input type="text" id="dogs" name="dogs" placeholder="yes/absolutely"> 
@@ -62,10 +62,14 @@
             <label for="color"> What is my favorite color?</label>
             <input type="text" id="color" name="color" placeholder="hint: it's not yellow">
         </div>
+
+        <div>
+            <label for="country"> What is my favorite country that I have ever been to?</label>
+            <input type="text" id="country" name="country" placeholder="It's a country in Asia"> 
+        </div> 
                 
         <div id="buttons"> 
                 <button type="submit"> Submit </button> 
-                <button type="submit">Guess</button>
                 <button type="reset">Play Again</button>
         </div>          
      </form>
@@ -93,8 +97,8 @@
           <p id="guess-number-response"></p>
       </section>
     
-      <script src="aboutme.js"></script>
-      <script src="guess.js"></script>
+      <script src="./aboutme.js"></script>
+      <script src="./guess.js"></script>
 </main>
 
 </body>
