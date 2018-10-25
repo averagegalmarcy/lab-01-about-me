@@ -9,28 +9,31 @@ body {
 }
 
 header {
-    font-family: 'Playfair Display', serif;
-    font-size: 20pt;
+    font-family: 'Raleway', sans-serif;
+    font-size: 30pt;
     text-emphasis: bold;
     text-align: center;
     text-decoration-line: underline;
+    background-color: lavender;
 }
 
 article {
-    font-family: 'Nunito Sans', sans-serif;
-    font-size: 12pt;
+    font-family: 'BenchNine', sans-serif;
+    font-size: 14pt;
     text-align: center;
     margin-top: 25px;
+    background-color:lavender; 
 }
 h1, h2, h3, h4,h5 {
-    font-family: 'Hind Siliguri', sans-serif;
+    font-family: 'BenchNine', sans-serif;
     font-size: 12pt;
     text-align: center;
     text-emphasis: bold;
+    background-color:lavender; 
 }
 
 p {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Martel', serif;
 }
 
 ul {
@@ -38,7 +41,7 @@ ul {
     padding: 0;
     margin: 0;
     text-align: center;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Martel', serif;
 }
 
 img {
@@ -50,7 +53,7 @@ img {
     margin-right: auto;
     margin-top: 25px;
     border-style: ridge;
-    border-color:lightblue;
+    border-color:lavender;
 }
 
 img:hover {
@@ -70,15 +73,16 @@ img:hover {
     body {
         background-image:url(https://static.vecteezy.com/system/resources/previews/000/236/205/large_2x/abstract-colorful-hand-draw-watercolor-background-vector.jpg);
         background-repeat: no-repeat;
-    }
-    #food {
+}
+
+#food {
         float: right;
         margin-right: 30%;
-    }
 }
+
 form div {
     text-align: center;
-    font-family: 'Hind Siliguri', sans-serif;
+    font-family: 'Martel', serif;
 }
 
 #about-me {
@@ -86,6 +90,10 @@ form div {
     border: 5px dashed rosybrown; 
     margin: 0 auto; 
     margin-top: 20px;
+}
+#about-me:hover {
+    width: 75%;
+    font-size: 16pt;
 }
 
 #buttons {
@@ -99,3 +107,35 @@ form div {
 .incorrect {
     background-color: red;
   }
+#label {
+    text-align:center;
+}
+.content {
+    text-align:center;
+    background-color: lavender;
+    font-family: 'BenchNine', sans-serif;
+    text-emphasis: bold;
+}
+
+
+#guess-form {
+    width: fit-content; 
+    border: 5px dashed rosybrown; 
+    margin: 0 auto; 
+    margin-top: 20px;
+}
+#guess-form:hover {
+    width: 75%;
+    font-size: 16pt;
+}
+#label {
+    width: fit-content; 
+    border: 5px dashed rosybrown; 
+    margin: 0 auto; 
+    margin-top: 20px;
+}
+#label:hover {
+    width: 75%;
+    font-size: 16pt;
+}
+}

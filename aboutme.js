@@ -1,5 +1,5 @@
 /* exported checkAboutMe, resetAboutMe */
-'use strict';
+
 var aboutMeForm = document.getElementById('about-me')
 var correctResponse = document.getElementById('correct-response')
 
@@ -77,6 +77,7 @@ function checkAboutMe() {
     }
     correctResponse.textContent = 'You got ' + correct + ' out of 5'; 
 }
+
 
 function resetAboutMe() {
     var elements = aboutMeForm.elements;
