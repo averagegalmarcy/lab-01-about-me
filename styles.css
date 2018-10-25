@@ -1,5 +1,5 @@
 body {
-    background-image:url(https://i.pinimg.com/236x/9f/86/a4/9f86a408e78a715bd6b9ede39e29efbd.jpg);
+    background-image:url(https://i.pinimg.com/originals/cc/0e/ca/cc0eca52c8cc9f546a8a5ccba5be02f1.jpg);
     background-position: center;  
     height: 100%;
     background-size: cover;
@@ -13,8 +13,6 @@ header {
     font-size: 30pt;
     text-emphasis: bold;
     text-align: center;
-    text-decoration-line: underline;
-    background-color: lavender;
 }
 
 article {
@@ -86,10 +84,9 @@ form div {
 }
 
 #about-me {
-    width: fit-content; 
-    border: 5px dashed rosybrown; 
+    background-color: plum;
     margin: 0 auto; 
-    margin-top: 20px;
+    margin-top: 20px; 
 }
 #about-me:hover {
     width: 75%;
@@ -112,30 +109,28 @@ form div {
 }
 .content {
     text-align:center;
-    background-color: lavender;
     font-family: 'BenchNine', sans-serif;
     text-emphasis: bold;
 }
 
 
 #guess-form {
-    width: fit-content; 
-    border: 5px dashed rosybrown; 
+    background-color: plum; 
     margin: 0 auto; 
-    margin-top: 20px;
+    margin-top: 20px; 
 }
 #guess-form:hover {
     width: 75%;
     font-size: 16pt;
 }
 #label {
-    width: fit-content; 
-    border: 5px dashed rosybrown; 
+    background-color: plum; 
     margin: 0 auto; 
     margin-top: 20px;
+    
 }
 #label:hover {
     width: 75%;
     font-size: 16pt;
 }
-}
+ }
