@@ -67,6 +67,7 @@ function checkAboutMe() {
     }
 
     if (ageAnswer === 22) {
+        correct = correct + 1;
         ageInput.classList.add('correct');
         ageInput.classList.remove('incorrect');
     }
