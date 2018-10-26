@@ -5,6 +5,8 @@ body {
     background-size: cover;
     border-style: groove;
     padding: 8px;
+    z-index: -15;
+    opacity: .8;
     
 }
 
@@ -43,8 +45,8 @@ ul {
 }
 
 img {
-    width: 50%;
-    height: 50%; 
+    width: 35%;
+    height: 75vh; 
     border-radius: 360%;
     display: block;
     margin-left: auto;
@@ -52,6 +54,11 @@ img {
     margin-top: 25px;
     border-style: ridge;
     border-color:lavender;
+}
+
+#image {
+    float:left;
+    margin: 25px, 100px,  0, 0; 
 }
 
 img:hover {

@@ -7,16 +7,16 @@ function checkAboutMe() {
     var elements = aboutMeForm.elements;
 
     var dogInput = elements.dogs;
-    var likeDogs = dogInput.value.toLowerCase();
+    var likeDogs = dogInput.value;
 
     var colorInput = elements.color;
-    var purpleColor = colorInput.value.toLowerCase();
+    var purpleColor = colorInput.value;
 
     var countryInput = elements.country;
-    var countryAnswer = countryInput.value.toLowerCase();
+    var countryAnswer = countryInput;
     
     var dogName = elements.name;
-    var nameInput = dogName.value.toLowerCase();
+    var nameInput = dogName.value;
 
     var ageInput = elements.name;
     var ageAnswer = ageInput.value;
