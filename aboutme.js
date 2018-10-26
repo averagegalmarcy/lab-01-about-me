@@ -13,17 +13,17 @@ function checkAboutMe() {
     var purpleColor = colorInput.value;
 
     var countryInput = elements.country;
-    var countryAnswer = countryInput;
+    var countryAnswer = countryInput.value;
     
     var dogName = elements.name;
     var nameInput = dogName.value;
 
-    var ageInput = elements.name;
+    var ageInput = elements.age;
     var ageAnswer = ageInput.value;
 
     var correct = 0;
 
-    if(likeDogs === 'yes' ||  likeDogs === 'absolutely') {
+    if(likeDogs.toLowerCase() === 'yes' ||  likeDogs.toLowerCase() === 'absolutely') {
         correct = correct + 1;
         dogInput.classList.add('correct');
         dogInput.classList.remove('incorrect');
@@ -34,7 +34,7 @@ function checkAboutMe() {
         dogInput.classList.add('incorrect');
         dogInput.classList.remove('correct');
     }
-    if (purpleColor === 'lavender' || purpleColor === 'purple') {
+    if (purpleColor.toLowerCase() === 'lavender' || purpleColor.toLowerCase() === 'purple') {
         correct = correct + 1;
         colorInput.classList.add('correct');
         colorInput.classList.remove('incorrect');
@@ -45,7 +45,7 @@ function checkAboutMe() {
         colorInput.classList.add('incorrect');
     }
 
-    if (countryAnswer === 'Japan') {
+    if (countryAnswer.toLowerCase() === 'japan') {
         correct = correct + 1;
         countryInput.classList.add('correct');
         countryInput.classList.remove('incorrect');
@@ -55,7 +55,7 @@ function checkAboutMe() {
         countryInput.classList.remove('correct')
     }
 
-    if (nameInput === 'Cheddar' || nameInput === 'Pickles') {
+    if (nameInput.toLowerCase() === 'cheddar' || nameInput.toLowerCase() === 'pickles') {
         correct = correct + 1;
         dogName.classList.add('correct');
         dogName.classList.remove('incorrect');
@@ -66,7 +66,7 @@ function checkAboutMe() {
         dogName.classList.add('incorrect');
     }
 
-    if (ageAnswer === 22) {
+    if (ageAnswer == 22) {
         correct = correct + 1;
         ageInput.classList.add('correct');
         ageInput.classList.remove('incorrect');
@@ -85,7 +85,7 @@ function resetAboutMe() {
     var colorInput = elements.color;
     var countryAnswer = elements.country;
     var dogName = elements.name;
-    var ageInput = elements.name;
+    var ageInput = elements.age;
     var dogInput = elements.dogs;
 
     dogInput.classList.remove('correct');
@@ -95,7 +95,7 @@ function resetAboutMe() {
     countryAnswer.classList.remove('correct');
     countryAnswer.classList.remove('incorrect');
     dogName.classList.remove('correct');
-    dogName.classList.remove('incorrect')
+    dogName.classList.remove('incorrect');
     ageInput.classList.remove('correct');
     ageInput.classList.remove('incorrect');
     
