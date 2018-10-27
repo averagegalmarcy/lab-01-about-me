@@ -6,8 +6,7 @@ var guessResults = document.getElementById('guess-number-response');
 var totalGuesses = 0; 
 
 function checkGuessNumber() {
-    var guess = guessForm.elements.number.value; 
-
+    var guess = guessForm.elements.number.value;
     if(guess == 7) {
         alert("Congrats, you guessed the correct number!"); 
     }
@@ -17,6 +16,7 @@ function checkGuessNumber() {
         totalGuesses = totalGuesses +1; 
         console.log(totalGuesses); 
     }
+    guessResults.textContent = "You have guessed " + totalGuesses + " time/s"; 
 
 }
 
@@ -25,5 +25,5 @@ function resetGuessNumber() {
     var submit = document.getElementById('submit');
     submit.disabled = false;
     totalGuesses = 0;
-    guessResults.textContent = '';
 }
+
