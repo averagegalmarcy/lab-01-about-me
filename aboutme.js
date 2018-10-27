@@ -40,7 +40,7 @@ function checkAboutMe() {
         colorInput.classList.remove('incorrect');
     }
 
-    else {
+    else if (purpleColor !==''){
         colorInput.classList.remove('correct');
         colorInput.classList.add('incorrect');
     }
@@ -72,7 +72,7 @@ function checkAboutMe() {
         ageInput.classList.remove('incorrect');
     }
 
-    else {
+    else if (ageAnswer !== '') {
         ageInput.classList.add('incorrect');
         ageInput.classList.remove('correct');
     }
