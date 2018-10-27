@@ -99,7 +99,6 @@
     
           <div>
             <button type="submit" name="guess">Guess</button>
-            <button type="reset" name="play-again">Play Again</button>
           </div>
     
         </form>
@@ -113,7 +112,9 @@
 
       <p class="content">My Code</p>
 
-      <form id="label">
+      <form id="label"
+      onsubmit="event.preventDefault()"
+      >
           <p>
               <input name="section" type="checkbox" id="div" value="div">
               <label for="div">div</label>
@@ -127,7 +128,10 @@
               <input name="section" type="checkbox" id="body" value="body">
               <label for="body">body</label>
               <p id="total-count"></p>
-              <button id="click" onclick="tryQuerySelector()">Submit</button>
+              <div>
+              <button onclick="tryQuerySelector()">Submit</button>
+              <button type="reset" name="play-again">Play Again</button>
+              </div>
       </form>
     </main>
 </body>

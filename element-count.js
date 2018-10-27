@@ -1,4 +1,4 @@
-/* exported tryQuerySelector */
+/* exported tryQuerySelector guessCount resetCount totalCount */
 'use strict'
 
 function tryQuerySelector() {
@@ -18,4 +18,4 @@ function tryQuerySelector() {
         
     }
     totalCount.innerHTML = msg; 
-}
+}   

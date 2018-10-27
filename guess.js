@@ -23,7 +23,6 @@ function checkGuessNumber() {
 function resetGuessNumber() {
     var guess = guessForm.elements.number.value; 
     var submit = document.getElementById('submit');
-    submit.disabled = false;
     totalGuesses = 0;
 }
 
