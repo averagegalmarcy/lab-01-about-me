@@ -18,4 +18,4 @@ function tryQuerySelector() {
         
     }
     totalCount.innerHTML = msg; 
-}   
+}  
